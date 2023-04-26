@@ -1,2 +1,15 @@
-package jpashop.domain;public class Album {
+package jpashop.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Album extends Item {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String artist;
+    private String etc;
 }
